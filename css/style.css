@@ -1,0 +1,1574 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* ------RESET -------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------ INDEX (11 al 160) ---------*/
+
+/*-------HEADER ----------*/
+
+.grid-contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 1700px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+.headerindex {
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.headerindex nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+
+header nav ul li {
+    background-color: #A47E3B;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    margin-left: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    text-decoration-color: black;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+header nav ul li a:hover {
+    color: rgba(0, 0, 0, 0.801);
+}
+
+
+
+.nombredebandaheader {
+    color: #A47E3B;
+    box-sizing: border-box;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000;
+    justify-content: center;
+}
+
+
+header {
+    display: flex;
+}
+
+header img {
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.headerindex nav {
+    display: flex;
+}
+
+.checkbtn {
+    color: #A47E3B;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*-------MAIN----------*/
+
+.mainindex {
+    width: 100%;
+    height: 100%;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 800px 400px 500px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "hero hero hero"
+        "videos videos videos"
+        "galeria galeria galeria";
+
+}
+
+.hero {
+    background-image: url(../img/Foto\ banda\ Hero\ section.jpg);
+    height: calc(150vh - 137px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: hero;
+
+}
+
+.hero div {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30%;
+
+
+}
+
+
+.sudamericatour {
+    color: #DFE5EB;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+    /*position: absolute; top: 500px; left: 350px;*/
+    text-shadow: -5px -3px 5px rgba(136, 123, 123, 0.36);
+}
+
+.adquirirentradas {
+    background: transparent;
+    color: #DFE5EB;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+    border: 3px solid #DFE5EB;
+    border-radius: 10px;
+    padding: 2px;
+    /*position: absolute; top: 650px; left: 600px;*/
+    text-shadow: -5px -3px 5px rgba(136, 123, 123, 0.36);
+    animation: pulse 1.5s infinite;
+}
+
+.hero div a {
+    transition: 1s ease-out
+}
+
+.hero div a:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+/*@keyframes pulse{
+    0%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, .1)
+
+    }
+
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 25px rgba(256, 256, 256, 0)
+    }
+
+    100%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0)
+    }
+}*/
+
+.videos {
+    background-color: black;
+    align-items: center;
+    grid-area: videos;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.video {
+    display: inline-block;
+    width: 400px;
+
+}
+
+.galeriadefotos {
+    background-color: black;
+    grid-area: galeria;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+}
+
+
+.carousel-inner div img {
+    width: 95%;
+    height: 500px;
+    object-fit: cover;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+
+/*-------FOOTER----------*/
+
+.footerindex {
+    align-items: center;
+    text-align: center;
+    background-color: #A47E3B;
+    height: 100%;
+    width: 100%;
+    grid-area: footer;
+}
+
+.redessociales {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+
+.iconosredes {
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+}
+
+.instagram {
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    transition: 0.7s ease-out
+}
+
+.instagram:hover {
+    transform: scale(1.5);
+}
+
+.facebook {
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    transition: 0.7s ease-out
+}
+
+.facebook:hover {
+    transform: scale(1.5);
+}
+
+.twitter {
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    transition: 0.7s ease-out
+}
+
+.twitter:hover {
+    transform: scale(1.5);
+}
+
+.youtube {
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    transition: 0.7s ease-out
+}
+
+.youtube:hover {
+    transform: scale(1.5);
+}
+
+.spotify {
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    transition: 0.7s ease-out
+}
+
+.spotify:hover {
+    transform: scale(1.5);
+}
+
+
+.copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .nombredebandaheader {
+        margin-left: 400px;
+    }
+
+    .hero {
+        height: calc(100vh - 20px);
+    }
+
+
+    .hero div {
+        margin-top: 20%;
+    }
+
+
+    .video {
+        width: 650px;
+
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .video {
+        width: 300px;
+
+    }
+
+    .galeriafoto {
+        width: 300px;
+        height: 200px;
+    }
+
+    .sudamericatour {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+
+    header nav ul li a {
+        font-size: 17px;
+    }
+
+    .hero {
+        height: 140vh;
+    }
+
+    .carousel-inner div img {
+        width: 80%;
+        height: 400px;
+    }
+
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .hero {
+        background-image: url(../img/Foto\ banda\ Hero\ section\ -\ para\ dispositivo\ mobil.jpg);
+    }
+
+    .hero div {
+        text-align: center;
+        align-items: center;
+
+    }
+
+
+    .sudamericatour {
+        font-size: 40px;
+        /*position: absolute; top: 500px; left: 370px;*/
+    }
+
+    .adquirirentradas {
+        font-size: 14px;
+        /*position: absolute; top: 650px; left: 470px;*/
+
+    }
+
+    .video {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .carousel-inner div img {
+        width: 90%;
+        height: 400px;
+    }
+
+
+    .checkbtn {
+        display: block;
+
+    }
+
+    header nav ul {
+        position: fixed;
+        width: 20%;
+        padding-right: 30px;
+        background-color: rgba(0, 0, 0, 0.479);
+        top: 150px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+
+    }
+
+    #check:checked~ul {
+        right: 0;
+        position: absolute;
+        top: 120px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    .grid-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 1200px 200px;
+        grid-template-areas:
+            "header "
+            "main"
+            "footer";
+    }
+
+    .nombredebandaheader {
+        font-size: 50px;
+
+    }
+
+    .checkbtn {
+        margin-right: 50px;
+    }
+
+    .mainindex {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 400px 500px;
+        gap: 0px 0px;
+        grid-template-areas:
+            "hero"
+            "videos"
+            "galeria";
+    }
+
+    .hero div {
+        margin-top: 5%;
+    }
+
+    .video {
+        width: 170px;
+    }
+
+    .redessociales img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 630px) {
+
+    header img {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .nombredebandaheader {
+        font-size: 30px;
+    }
+
+    .headerindex nav ul {
+        margin-right: -60px;
+    }
+
+
+
+}
+
+
+
+
+
+/*------BANDA (162 al 278*/
+
+/*-------HEADER----------*/
+
+.grid-contenedorbanda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 900px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer"
+}
+
+.headerbanda {
+    background-color: black;
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-contenedorbanda header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.titulobandaheader {
+    color: #A47E3B;
+    box-sizing: border-box;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000;
+    justify-content: center;
+}
+
+
+/*-------MAIN----------*/
+
+.mainbanda {
+    height: 1000px;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "historia integrantes"
+        "historia integrantes"
+}
+
+.herobanda {
+    background-color: #141313;
+    height: calc(150vh - 137px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 900px;
+    grid-area: integrantes;
+    display: flex;
+    justify-content: center
+}
+
+
+.herobanda div h2 {
+    margin: 15px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    font-weight: 20px;
+}
+
+
+.cajaintegrantes {
+    color: #A47E3B;
+    font-size: 10px;
+    font-weight: 900;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.cajaLuciano {
+    text-align: center;
+    color: #A47E3B;
+    font-size: 11px;
+    font-weight: 900;
+    position: absolute;
+    top: 220px;
+    right: 330px;
+}
+
+.cajaCena {
+    text-align: center;
+    color: #A47E3B;
+    font-size: 11px;
+    font-weight: 900;
+    position: absolute;
+    top: 370px;
+    right: 30px;
+}
+
+.cajaBarroso {
+    text-align: center;
+    color: #A47E3B;
+    font-size: 11px;
+    font-weight: 900;
+    position: absolute;
+    top: 570px;
+    right: 330px;
+}
+
+.cajaSamper {
+    text-align: center;
+    color: #A47E3B;
+    font-size: 11px;
+    font-weight: 900;
+    position: absolute;
+    top: 720px;
+    right: 30px;
+}
+
+
+
+.fotointegrantes {
+    padding-top: 2px;
+    width: 250px;
+    height: 250px;
+    border: 7px solid #A47E3B;
+    border-radius: 100%;
+}
+
+.historia {
+    text-align: left;
+    font-family: 'Signika Negative', sans-serif;
+    color: #A47E3B;
+    background-color: #141313;
+    background-size: cover;
+    height: 900px;
+    grid-area: historia;
+}
+
+.historia h3 {
+    text-align: center;
+}
+
+.titulohistoria {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.textohistoria {
+    text-align: center;
+    font-size: 23px;
+    padding-bottom: 30px;
+    margin-left: 10px;
+}
+
+.footerbanda {
+    align-items: center;
+    text-align: center;
+    background-color: #A47E3B;
+    height: 100%;
+    width: 100%;
+    grid-area: footer;
+
+}
+
+
+@media screen and (min-width: 2100px) {
+    .grid-contenedorbanda {
+        grid-template-rows: 150px 1200px 200px;
+    }
+
+    .historia {
+        height: 1200px;
+    }
+
+    .titulohistoria {
+        font-size: 45px;
+    }
+
+    .textohistoria {
+        font-size: 40px;
+    }
+
+    .cajaLuciano {
+        position: absolute;
+        right: 630px;
+    }
+
+    .cajaCena {
+        position: absolute;
+        right: 230px;
+    }
+
+    .cajaBarroso {
+        position: absolute;
+        right: 630px;
+    }
+
+    .cajaSamper {
+        position: absolute;
+        right: 230px;
+    }
+
+    .herobanda {
+        height: 1200px;
+    }
+}
+
+@media screen and (max-width: 2445px) {
+
+    .textohistoria {
+        font-size: 25px;
+    }
+
+    .cajaLuciano {
+        position: absolute;
+        right: 330px;
+    }
+
+    .cajaCena {
+        position: absolute;
+        right: 50px;
+    }
+
+    .cajaBarroso {
+        position: absolute;
+        right: 330px;
+    }
+
+    .cajaSamper {
+        position: absolute;
+        right: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1360px) {
+    .textohistoria {
+        font-size: 25px;
+    }
+
+    .cajaLuciano {
+        position: absolute;
+        right: 250px;
+    }
+
+    .cajaCena {
+        position: absolute;
+        right: 30px;
+    }
+
+    .cajaBarroso {
+        position: absolute;
+        right: 250px;
+    }
+
+    .cajaSamper {
+        position: absolute;
+        right: 30px;
+    }
+
+    .fotointegrantes {
+        padding-top: 2px;
+        width: 180px;
+        height: 180px;
+    }
+
+    .herobanda div h2 {
+        margin: 15px;
+        font-size: 15px;
+        font-weight: 15px;
+    }
+
+}
+
+@media screen and (max-width: 1360px) {
+    .textohistoria {
+        font-size: 15px;
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+
+    .cajaLuciano {
+        position: absolute;
+        right: 200px;
+    }
+
+    .cajaCena {
+        position: absolute;
+        right: 10px;
+    }
+
+    .cajaBarroso {
+        position: absolute;
+        right: 200px;
+    }
+
+    .cajaSamper {
+        position: absolute;
+        right: 10px;
+    }
+
+    .fotointegrantes {
+        width: 140px;
+        height: 140px;
+    }
+
+    .herobanda div h2 {
+        margin: 20px;
+        font-size: 15px;
+        font-weight: 10px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .herobanda {
+        flex-direction: column;
+    }
+
+    .cajaLuciano {
+        position: static;
+    }
+
+    .cajaCena {
+        position: static;
+    }
+
+    .cajaBarroso {
+        position: static;
+    }
+
+    .cajaSamper {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .grid-contenedorbanda {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 900px 200px;
+        grid-template-areas:
+            "header "
+            "main"
+            "footer";
+    }
+
+    .titulobandaheader {
+        font-size: 30px;
+    }
+
+    .textohistoria {
+        font-size: 12px;
+
+    }
+}
+
+
+/*--------DISCOGRAFIA.HTML (280 al 368)-----*/
+/*--------HEADER----------*/
+
+.grid-contenedordisco {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 800px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
+}
+
+.headerdg {
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.headerdg header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+}
+
+.headerdg header img {
+    width: 140px;
+    height: 140px;
+    margin-right: 150px;
+}
+
+.titulodgheader {
+    color: #A47E3B;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000;
+
+}
+
+.headerdg nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    align-items: center;
+
+}
+
+
+/*--------MAIN--------*/
+
+.maindg {
+    background-color: #a47d3b96;
+    grid-area: main;
+}
+
+.herodg {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    height: 600px;
+    margin-top: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+
+.li ol li {
+    list-style-position: inside;
+}
+
+.laidentidad {
+    width: 230px;
+    height: 230px;
+}
+
+
+.enp ol li {
+    list-style-position: inside;
+}
+
+.elnuevoproceso {
+    width: 230px;
+    height: 230px;
+}
+
+
+.ar ol li {
+    list-style-position: inside;
+}
+
+.arcos {
+    width: 230px;
+    height: 230px;
+}
+
+
+.le ol li {
+    list-style-position: inside;
+}
+
+.laestructura {
+    width: 230px;
+    height: 230px;
+}
+
+.herodg div {
+    display: inline-block;
+}
+
+
+/*--------FOOTER--------*/
+
+.footerdg {
+    align-items: center;
+    text-align: center;
+    background-color: #A47E3B;
+    height: 100%;
+    width: 100%;
+    grid-area: footer;
+}
+
+
+
+.footerdiscografia footer {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1060px) {
+
+    .herodg div img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .herodg div h2 {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .grid-contenedordisco {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 1800px 200px;
+        grid-template-areas:
+            "header "
+            "main"
+            "footer";
+    }
+
+    .titulodgheader {
+        font-size: 30px;
+    }
+
+    .herodg {
+        margin: 60px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/*--------FECHAS.HTML (370 al 449)-----*/
+/*--------HEADER----------*/
+
+.grid-contenedorfechas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 900px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
+}
+
+.headerfechas {
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.headerfechas nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+.titulofechasheader {
+    color: #A47E3B;
+    box-sizing: border-box;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+/*--------MAIN----------*/
+
+.mainfechas {
+    background-image: url(../img/foto\ de\ fondo\ para\ fechas.jpg);
+    background-size: cover;
+    height: 900px;
+    grid-area: main;
+
+}
+
+main .herofechas {
+    width: 100%;
+    height: 500px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.lima {
+    border: 5px solid white;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+}
+
+.limafecha {
+    font-size: 75%;
+}
+
+.asuncion {
+    border: 5px solid white;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+
+}
+
+.asuncionfecha {
+    font-size: 75%;
+}
+
+.rio {
+    border: 5px solid white;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+}
+
+.riofecha {
+    font-size: 75%;
+}
+
+.comprar {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 3px solid #DFE5EB;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.footerfechas {
+    align-items: center;
+    text-align: center;
+    background-color: #A47E3B;
+    height: 100%;
+    width: 100%;
+    grid-area: footer;
+}
+
+@media screen and (max-width: 1230px) {
+
+    .grid-contenedorfechas {
+        grid-template-rows: 150px 700px 200px;
+    }
+
+    .mainfechas {
+        width: 100%;
+        background-image: url(../img/foto\ de\ fondo\ para\ fechas.jpg);
+        background-size: 100%;
+
+    }
+
+
+    main .herofechas {
+        font-size: 18px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+
+
+
+    .titulofechasheader {
+        font-size: 30px;
+        margin-left: 0px;
+    }
+
+    main .herofechas {
+        font-size: 12px;
+    }
+
+
+
+
+}
+
+
+
+/*-------CONTACTO (451 al 500)-----*/
+
+/*-------HEADER---------*/
+
+.grid-contenedorcontacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 900px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
+}
+
+.headercontacto {
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulocontactoheader {
+    color: #A47E3B;
+    box-sizing: border-box;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000;
+}
+
+.headercontacto nav ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+/*---------MAIN--------*/
+.maincontacto {
+    grid-area: main;
+    background: linear-gradient(rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.308)), url(../img/imagen\ fondo\ para\ contacto.jpg);
+    background-size: cover;
+    height: 900px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(223, 219, 219);
+    background-attachment: fixed;
+
+}
+
+.herocontacto {
+    width: 70%;
+    margin: auto;
+
+}
+
+.herocontacto form {
+    font-size: 30px;
+    border: 5px solid #DFE5EB;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+.herocontacto form div h2 {
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.herocontacto form div input {
+    width: 30%;
+    height: 40px;
+
+}
+
+.dejatumsj {
+    padding-top: 20px;
+}
+
+.enviar input {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+.footercontacto {
+    align-items: center;
+    text-align: center;
+    background-color: #A47E3B;
+    height: 100%;
+    width: 100%;
+    grid-area: footer;
+}
+
+@media screen and (max-width: 800px) {
+
+    .titulocontactoheader {
+        font-size: 30px;
+    }
+
+    .herocontacto form {
+        font-size: 30px;
+    }
+
+    .maincontacto {
+        background-size: contain;
+        background-position: center;
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .herocontacto form {
+        font-size: 20px;
+    }
+
+    .herocontacto form div input {
+        height: 20px;
+    }
+
+    .headercontacto nav ul li {
+        margin-left: -30px;
+    }
+
+    .dejatumsj textarea {
+        width: 200px;
+        height: 130px;
+    }
+
+}
+
+/*------------NOTICIAS (502 al 553)-----------*/
+/*-------HEADER---------*/
+
+.grid-contenedornoticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 800px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
+}
+
+
+.headernoticias {
+    background-color: black;
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headernoticias nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+
+
+.titulocontactonoticias {
+    color: #A47E3B;
+    box-sizing: border-box;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+/*-------MAIN---------*/
+
+.mainnoticias {
+    background-image: url(../img/foto\ banda\ para\ noticias.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: main;
+}
+
+.noticia1 {
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    color: #d1ad6e;
+    background-color: rgba(0, 0, 0, 0.685);
+    background-size: contain;
+    width: 300px;
+    height: 500px;
+    text-decoration: none;
+    margin-top: 10%;
+    padding-top: 20px;
+}
+
+.linknoticia1 {
+    color: rgb(221, 220, 220);
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 700;
+    text-shadow: 1px -3px 4px rgba(226, 221, 221, 0.4);
+    margin: 40px 0%;
+}
+
+.fotonoticia1 {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.noticia2 {
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    color: #d1ad6e;
+    background-color: rgba(0, 0, 0, 0.685);
+    background-size: contain;
+    width: 300px;
+    height: 500px;
+    text-decoration: none;
+    margin-top: 10%;
+    padding-top: 20px;
+}
+
+.linknoticia2 {
+    color: rgb(221, 220, 220);
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 700;
+    text-shadow: 1px -3px 4px rgba(226, 221, 221, 0.4);
+}
+
+.fotonoticia2 {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.noticia3 {
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    color: #d1ad6e;
+    background-color: rgba(0, 0, 0, 0.685);
+    background-size: contain;
+    width: 300px;
+    height: 500px;
+    text-decoration: none;
+    margin-top: 10%;
+    padding-top: 20px;
+}
+
+.linknoticia3 {
+    color: rgb(221, 220, 220);
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 700;
+    text-shadow: 1px -3px 4px rgba(226, 221, 221, 0.4);
+}
+
+.fotonoticia3 {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.mainnoticias div p {
+    margin-top: 20%;
+}
+
+.footernoticias {
+    align-items: center;
+    text-align: center;
+    background-color: #A47E3B;
+    height: 100%;
+    width: 100%;
+    grid-area: footer;
+}
+
+@media screen and (max-width: 1150px) {
+
+    .grid-contenedornoticias {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 2000px 200px;
+        gap: 0px 0px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+    }
+
+    .mainnoticias {
+        background-image: url(../img/foto\ banda\ para\ noticias.jpg);
+        background-size: contain;
+        height: 2000px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+
+    .mainnoticias div img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 10%;
+    }
+
+    .mainnoticias div a {
+        margin-top: 30px;
+        text-anchor: start;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .titulocontactonoticias {
+        font-size: 30px;
+    }
+
+    .mainnoticias div a {
+        font-size: 13px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .mainnoticias div p {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .titulocontactonoticias {
+        margin-left: 0%;
+    }
+}
