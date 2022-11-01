@@ -1,0 +1,213 @@
+/*-------HEADER-INDEX ----------*/
+
+.headerindex {
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    img {
+        margin-left: 30px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .nombredebandaheader {
+        color: #A47E3B;
+        box-sizing: border-box;
+        font-size: 80px;
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 1000;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex;
+
+        #check {
+            display: none;
+        }
+
+        .checkbtn {
+            color: #A47E3B;
+            font-size: 30px;
+            margin-right: 20px;
+            cursor: pointer;
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-right: 20px;
+
+            li {
+                background-color: #A47E3B;
+                list-style: none;
+                text-decoration: none;
+                display: flex;
+                margin-left: 10px;
+                border: 2px solid grey;
+                border-radius: 10px;
+                text-decoration-color: black;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Bebas Neue', cursive;
+                    font-size: 25px;
+                    font-weight: 600;
+                    padding-left: 5px;
+                    padding-right: 5px;
+
+                    &:hover {
+                        color: rgba(0, 0, 0, 0.801);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*-------HEADER-BANDA ----------*/
+
+.headerbanda {
+    background-color: black;
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+
+    .titulobandaheader {
+        color: #A47E3B;
+        box-sizing: border-box;
+        font-size: 80px;
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 1000;
+        justify-content: center;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 20px;
+        }
+    }
+}
+
+/*-------HEADER-DISCOGRAFIA ----------*/
+
+.headerdg {
+    img {
+        width: 140px;
+        height: 140px;
+        margin-right: 150px;
+    }
+
+    .titulodgheader {
+        color: #A47E3B;
+        font-size: 80px;
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 1000;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            margin-right: 20px;
+            align-items: center;
+
+        }
+    }
+}
+
+/*-------HEADER-DISCOGRAFIA ----------*/
+
+.headerfechas {
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .titulofechasheader {
+        color: #A47E3B;
+        box-sizing: border-box;
+        font-size: 80px;
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 1000;
+        margin-top: 20px;
+        margin-left: 90px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            margin-right: 20px;
+        }
+    }
+}
+
+/*-------HEADER-CONTACTO ----------*/
+
+
+.headercontacto {
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .titulocontactoheader {
+        color: #A47E3B;
+        box-sizing: border-box;
+        font-size: 80px;
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 1000;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            margin-right: 20px;
+        }
+    }
+}
+
+/*-------HEADER-NOTICIAS ----------*/
+
+
+.headernoticias {
+    background-color: black;
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+
+    .titulocontactonoticias {
+        color: #A47E3B;
+        box-sizing: border-box;
+        font-size: 80px;
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 1000;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            margin-right: 20px;
+        }
+    }   
+}

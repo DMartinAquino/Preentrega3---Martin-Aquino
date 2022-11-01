@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 1700px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+.grid-contenedorbanda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 900px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer"
+}
+
+.grid-contenedordisco {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 800px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
+}
+
+.grid-contenedorfechas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 900px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
+}
+
+.grid-contenedorcontacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 900px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
+}
+
+.grid-contenedornoticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 800px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
+}

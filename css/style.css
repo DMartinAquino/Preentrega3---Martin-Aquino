@@ -33,6 +33,24 @@
     flex-wrap: wrap;
 }
 
+.nombredebandaheader img {
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.nombredebandaheader {
+    color: #A47E3B;
+    box-sizing: border-box;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000;
+    justify-content: center;
+}
+
+#check {
+    display: none;
+}
 
 .headerindex nav ul {
     display: flex;
@@ -70,27 +88,6 @@ header nav ul li a:hover {
 }
 
 
-
-.nombredebandaheader {
-    color: #A47E3B;
-    box-sizing: border-box;
-    font-size: 80px;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 1000;
-    justify-content: center;
-}
-
-
-header {
-    display: flex;
-}
-
-header img {
-    margin-left: 30px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
 .headerindex nav {
     display: flex;
 }
@@ -103,9 +100,7 @@ header img {
     display: none;
 }
 
-#check {
-    display: none;
-}
+
 
 /*-------MAIN----------*/
 
@@ -173,7 +168,7 @@ header img {
 }
 
 .hero div a:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
     color: white;
 }
 
@@ -909,16 +904,7 @@ header img {
     grid-area: header;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-}
-
-.headerdg header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-
+    justify-content: space-between;   
 }
 
 .headerdg header img {
@@ -1082,15 +1068,6 @@ header img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
-}
-
-.headerfechas nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    margin-right: 20px;
 }
 
 .titulofechasheader {
@@ -1102,6 +1079,15 @@ header img {
     margin-top: 20px;
     margin-left: 90px;
 }
+
+.headerfechas nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+
 
 /*--------MAIN----------*/
 
