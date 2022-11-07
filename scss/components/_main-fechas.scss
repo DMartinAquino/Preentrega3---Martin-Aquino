@@ -1,0 +1,99 @@
+/*---MAIN-FECHAS---*/
+
+.mainfechas {
+    background-image: url(../img/Foto_de_fondo_para_fechas.jpg);
+    background-size: cover;
+    height: 900px;
+    grid-area: main;
+
+    .herofechas {
+        width: 100%;
+        height: 500px;
+        color: white;
+        font-size: 30px;
+        font-family: 'Bebas Neue', cursive;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: auto;
+        margin-top: 50px;
+
+        .lima {
+            border: 5px solid white;
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 5px 5px;
+
+            .limafecha {
+                font-size: 75%;
+            }
+
+            .comprar {
+                font-family: 'Bebas Neue', cursive;
+                font-weight: 400;
+                text-decoration: none;
+                color: white;
+                background-color: transparent;
+                border: 3px solid #DFE5EB;
+                border-radius: 5px;
+                padding: 5px 15px;
+            }
+        }
+
+        .asuncion {
+            border: 5px solid white;
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 5px 5px;
+
+            .asuncionfecha {
+                font-size: 75%;
+            }
+
+            .comprar {
+                font-family: 'Bebas Neue', cursive;
+                font-weight: 400;
+                text-decoration: none;
+                color: white;
+                background-color: transparent;
+                border: 3px solid #DFE5EB;
+                border-radius: 5px;
+                padding: 5px 15px;
+            }
+
+        }
+
+        .rio {
+            border: 5px solid white;
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 5px 5px;
+
+            .riofecha {
+                font-size: 75%;
+            }
+
+            .comprar {
+                font-family: 'Bebas Neue', cursive;
+                font-weight: 400;
+                text-decoration: none;
+                color: white;
+                background-color: transparent;
+                border: 3px solid #DFE5EB;
+                border-radius: 5px;
+                padding: 5px 15px;
+            }
+        }
+
+    }
+
+}

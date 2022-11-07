@@ -1,0 +1,151 @@
+@import "../base/variables";
+
+/*---MAIN-INDEX---*/
+
+.mainbanda {
+    height: 1000px;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "historia integrantes"
+        "historia integrantes";
+
+    .herobanda {
+        background-color: #141313;
+        height: calc(150vh - 137px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 900px;
+        grid-area: integrantes;
+        display: flex;
+        justify-content: center;
+
+        .cajaLuciano {
+            text-align: center;
+            color: $color-dorado;
+            font-size: 11px;
+            font-weight: 900;
+            position: absolute;
+            top: 220px;
+            right: 330px;
+
+            h2 {
+                margin: 15px;
+                font-family: 'Bebas Neue', cursive;
+                font-size: 15px;
+                font-weight: 20px;
+            }
+
+            .fotointegrantes {
+                padding-top: 2px;
+                width: 250px;
+                height: 250px;
+                border: 7px solid $color-dorado;
+                border-radius: 100%;
+            }
+        }
+
+        .cajaCena {
+            text-align: center;
+            color: $color-dorado;
+            font-size: 11px;
+            font-weight: 900;
+            position: absolute;
+            top: 370px;
+            right: 30px;
+
+            h2 {
+                margin: 15px;
+                font-family: 'Bebas Neue', cursive;
+                font-size: 15px;
+                font-weight: 20px;
+            }
+
+            .fotointegrantes {
+                padding-top: 2px;
+                width: 250px;
+                height: 250px;
+                border: 7px solid #A47E3B;
+                border-radius: 100%;
+            }
+        }
+
+        .cajaBarroso {
+            text-align: center;
+            color: $color-dorado;
+            font-size: 11px;
+            font-weight: 900;
+            position: absolute;
+            top: 570px;
+            right: 330px;
+
+            h2 {
+                margin: 15px;
+                font-family: 'Bebas Neue', cursive;
+                font-size: 15px;
+                font-weight: 20px;
+            }
+
+            .fotointegrantes {
+                padding-top: 2px;
+                width: 250px;
+                height: 250px;
+                border: 7px solid #A47E3B;
+                border-radius: 100%;
+            }
+        }
+
+        .cajaSamper {
+            text-align: center;
+            color: $color-dorado;
+            font-size: 11px;
+            font-weight: 900;
+            position: absolute;
+            top: 720px;
+            right: 30px;
+
+            h2 {
+                margin: 15px;
+                font-family: 'Bebas Neue', cursive;
+                font-size: 15px;
+                font-weight: 20px;
+            }
+
+            .fotointegrantes {
+                padding-top: 2px;
+                width: 250px;
+                height: 250px;
+                border: 7px solid #A47E3B;
+                border-radius: 100%;
+            }
+        }
+    }
+
+    .historia {
+        text-align: center;
+        font-family: 'Signika Negative', sans-serif;
+        color: $color-dorado;
+        background-color: #141313;
+        background-size: cover;
+        height: 900px;
+        grid-area: historia;
+
+        h3 {
+            text-align: center;
+        }
+
+        .titulohistoria {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 35px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+    }
+
+}

@@ -1,0 +1,471 @@
+@import "../base/variables";
+
+/*---FOOTER-INDEX---*/
+
+.footerindex {
+    align-items: center;
+    text-align: center;
+    background-color: $color-dorado;
+    height: 100%;
+    width: 100%;
+    grid-area: footer;
+    .redessociales {
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        a{
+            .instagram {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }      
+        }
+        a{
+            .facebook {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        a{
+            .twitter {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        a{
+            .youtube {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }  
+            }
+        }
+        a{
+            .spotify {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }   
+    .copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+    }
+}
+
+/*---FOOTER-BANDA---*/
+
+.footerbanda {
+    align-items: center;
+    text-align: center;
+    background-color: $color-dorado;
+    height: 100%;
+    width: 100%;
+    grid-area: footer;
+    .redessociales {
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        a{
+            .instagram {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }      
+        }
+        a{
+            .facebook {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        a{
+            .twitter {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        a{
+            .youtube {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }  
+            }
+        }
+        a{
+            .spotify {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }   
+    .copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+    }
+}
+
+
+
+/*---FOOTER-DISCOGRAFIA---*/
+
+.footerdg {
+    align-items: center;
+    text-align: center;
+    background-color: $color-dorado;
+    height: 100%;
+    width: 100%;
+    grid-area: footer;
+    .redessociales {
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        a{
+            .instagram {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }      
+        }
+        a{
+            .facebook {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        a{
+            .twitter {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        a{
+            .youtube {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }  
+            }
+        }
+        a{
+            .spotify {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }   
+    .copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+    }
+}
+
+
+/*---FOOTER-FECHAS---*/
+
+.footerfechas {
+    align-items: center;
+    text-align: center;
+    background-color: $color-dorado;
+    height: 100%;
+    width: 100%;
+    grid-area: footer;
+    .redessociales {
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        a{
+            .instagram {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }      
+        }
+        a{
+            .facebook {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        a{
+            .twitter {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        a{
+            .youtube {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }  
+            }
+        }
+        a{
+            .spotify {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }   
+    .copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+    }
+}
+
+
+/*---FOOTER-CONTACTO---*/
+
+.footercontacto {
+    align-items: center;
+    text-align: center;
+    background-color: $color-dorado;
+    height: 100%;
+    width: 100%;
+    grid-area: footer;
+    .redessociales {
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        a{
+            .instagram {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }      
+        }
+        a{
+            .facebook {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        a{
+            .twitter {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        a{
+            .youtube {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }  
+            }
+        }
+        a{
+            .spotify {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }   
+    .copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+    }
+}
+
+
+/*---FOOTER-NOTICIAS---*/
+
+.footernoticias {
+    align-items: center;
+    text-align: center;
+    background-color: $color-dorado;
+    height: 100%;
+    width: 100%;
+    grid-area: footer;
+    .redessociales {
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        a{
+            .instagram {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }      
+        }
+        a{
+            .facebook {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        a{
+            .twitter {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        a{
+            .youtube {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }  
+            }
+        }
+        a{
+            .spotify {
+                width: 64px;
+                height: 64px;
+                padding: 10px;
+                transition: 0.7s ease-out;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }   
+    .copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+

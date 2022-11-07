@@ -1,0 +1,56 @@
+/*---MAIN-CONTACTO---*/
+
+.maincontacto {
+    grid-area: main;
+    background: linear-gradient(rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.308)), url(../img/imagen_fondo_para_contacto.jpg);
+    background-size: cover;
+    height: 900px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(223, 219, 219);
+    background-attachment: fixed;
+
+    .herocontacto {
+        width: 70%;
+        margin: auto;
+
+        form {
+            font-size: 30px;
+            border: 5px solid #DFE5EB;
+            padding: 20px;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+            margin-top: 40px;
+
+            div {
+                h2 {
+                    padding-bottom: 10px;
+                    align-items: center;
+                }
+            }
+
+            div {
+                input {
+                    width: 30%;
+                    height: 40px;
+                }
+
+            }
+
+            .dejatumsj {
+                padding-top: 20px;
+            }
+
+            .enviar {
+                input {
+                    font-family: 'Bebas Neue', cursive;
+                    font-size: 20px;
+                }
+
+            }
+
+        }
+
+    }
+
+}

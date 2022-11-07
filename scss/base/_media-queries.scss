@@ -1,0 +1,1212 @@
+/*---MEDIA-QUERIES-INDEX---*/
+@media screen and (max-width: 1240px) {
+
+    .mainindex {
+        .hero {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+
+            div {
+                .sudamericatour {
+                    font-size: 70px;
+                }
+
+            }
+
+        }
+
+        .videos {
+            .video {
+                width: 300px;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+    .headerindex {
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 17px;
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+    .mainindex {
+
+        .galeriadefotos {
+            div {
+                .carousel-inner {
+                    div {
+                        div {
+                            img {
+                                width: 80%;
+                                height: 400px;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+
+    .headerindex {
+        nav {
+            #check:checked~ul {
+                right: 0;
+                position: absolute;
+                top: 120px;
+            }
+
+            .checkbtn {
+                display: block;
+
+            }
+
+            ul {
+                position: fixed;
+                padding-right: 30px;
+                background-color: rgba(0, 0, 0, 0.479);
+                top: 150px;
+                right: -120%;
+                text-align: center;
+                transition: all .5s;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                li {
+                    display: block;
+                    margin: 10px 0;
+                    line-height: 30px;
+
+                    a {
+                        font-size: 20px;
+
+                        &:hover,
+                        li a.active {
+                            background: none;
+
+                        }
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .mainindex {
+        .hero {
+            background-image: url(../img/Foto_banda_Hero_section_para_dispositivo_mobil.jpg);
+            background-size: cover;
+            background-position: top;
+            width: 100%;
+            height: 100%;
+
+            div {
+                text-align: center;
+                align-items: center;
+
+                .sudamericatour {
+                    font-size: 40px;
+                }
+
+                .adquirirentradas {
+                    font-size: 14px;
+
+                }
+
+            }
+        }
+
+        .videos {
+            .video {
+                width: 200px;
+                height: 200px;
+            }
+
+        }
+
+        .galeriadefotos {
+            div {
+                .carousel-inner {
+                    div {
+                        div {
+                            img {
+                                width: 90%;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+
+    .grid-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 1200px 200px;
+        grid-template-areas:
+            "header "
+            "main"
+            "footer";
+
+        .headerindex {
+
+            .nombredebandaheader {
+                font-size: 50px;
+
+            }
+
+            nav {
+                .checkbtn {
+                    margin-right: 50px;
+                }
+            }
+        }
+
+        .mainindex {
+            grid-template-columns: 1fr;
+            grid-template-rows: 300px 400px 500px;
+            gap: 0px 0px;
+            grid-template-areas:
+                "hero"
+                "videos"
+                "galeria";
+
+            .hero {
+                background-size: cover;
+                background-position: top;
+                width: 100%;
+                height: 100%;
+
+                div {
+                    margin-top: 25%;
+                }
+            }
+
+            .videos {
+                .video {
+                    width: 170px;
+                }
+            }
+        }
+
+        .footerindex {
+            .redessociales img {
+                width: 50px;
+                height: 50px;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+
+
+    .headerindex {
+
+        img {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .nombredebandaheader {
+            font-size: 50px;
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .grid-contenedor {
+
+        .headerindex {
+            nav {
+                ul {
+                    margin-right: -80px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .grid-contenedor {
+
+        .headerindex {
+            nav {
+                ul {
+                    margin-right: -140px;
+                }
+            }
+        }
+    }
+
+
+}
+
+/*---MEDIA-QUERIES-BANDA---*/
+
+@media screen and (min-width: 2100px) {
+    .grid-contenedorbanda {
+        grid-template-rows: 150px 1200px 200px;
+
+        .herobanda {
+            height: 1200px;
+
+            .cajaLuciano {
+                position: absolute;
+                right: 630px;
+            }
+
+            .cajaCena {
+                position: absolute;
+                right: 230px;
+            }
+
+            .cajaBarroso {
+                position: absolute;
+                right: 630px;
+            }
+
+            .cajaSamper {
+                position: absolute;
+                right: 230px;
+            }
+        }
+
+        .historia {
+            height: 1200px;
+
+            .titulohistoria {
+                font-size: 45px;
+            }
+
+            .textohistoria {
+                font-size: 40px;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 2445px) {
+
+    .herobanda {
+        .cajaLuciano {
+            position: absolute;
+            right: 330px;
+        }
+
+        .cajaCena {
+            position: absolute;
+            right: 50px;
+        }
+
+        .cajaBarroso {
+            position: absolute;
+            right: 330px;
+        }
+
+        .cajaSamper {
+            position: absolute;
+            right: 50px;
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 1360px) {
+
+    .mainbanda {
+
+
+        .herobanda {
+            .cajaLuciano {
+                position: absolute;
+                right: 250px;
+                font-size: 9px;
+
+
+                .fotointegrantes {
+                    padding-top: 2px;
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+
+            .cajaCena {
+                position: absolute;
+                right: 30px;
+
+
+                .fotointegrantes {
+                    padding-top: 2px;
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+
+            .cajaBarroso {
+                position: absolute;
+                right: 250px;
+
+                .fotointegrantes {
+                    padding-top: 2px;
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+
+            .cajaSamper {
+                position: absolute;
+                right: 30px;
+
+                .fotointegrantes {
+                    padding-top: 2px;
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+        }
+    }
+
+}
+
+.historia {
+    .textohistoria {
+        font-size: 15px;
+        padding-top: 100px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1060px) {
+
+    .mainbanda {
+        .herobanda {
+            .cajaLuciano {
+                position: absolute;
+                right: 200px;
+
+                h2 {
+                    margin: 20px;
+                    font-size: 15px;
+                    font-weight: 10px;
+                }
+
+                .fotointegrantes {
+                    width: 140px;
+                    height: 140px;
+                }
+
+            }
+
+            .cajaCena {
+                position: absolute;
+                right: 10px;
+
+                h2 {
+                    margin: 20px;
+                    font-size: 15px;
+                    font-weight: 10px;
+                }
+
+                .fotointegrantes {
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+
+            .cajaBarroso {
+                position: absolute;
+                right: 200px;
+
+                h2 {
+                    margin: 20px;
+                    font-size: 15px;
+                    font-weight: 10px;
+                }
+
+
+                .fotointegrantes {
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+
+            .cajaSamper {
+                position: absolute;
+                right: 10px;
+
+                h2 {
+                    margin: 20px;
+                    font-size: 15px;
+                    font-weight: 10px;
+                }
+
+                .fotointegrantes {
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .headerbanda {
+        nav {
+            #check:checked~ul {
+                right: 0;
+                position: absolute;
+                top: 120px;
+            }
+
+            .checkbtn {
+                display: block;
+
+            }
+
+            ul {
+                position: fixed;
+                padding-right: 30px;
+                background-color: rgba(0, 0, 0, 0.479);
+                top: 150px;
+                right: -100%;
+                text-align: center;
+                transition: all .5s;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                li {
+                    display: block;
+                    margin: 10px 0;
+                    line-height: 30px;
+
+                    a {
+                        font-size: 20px;
+
+                        &:hover,
+                        li a.active {
+                            background: none;
+
+                        }
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .mainbanda {
+        .herobanda {
+            flex-direction: column;
+
+            .cajaLuciano {
+                position: static;
+            }
+
+            .cajaCena {
+                position: static;
+            }
+
+            .cajaBarroso {
+                position: static;
+            }
+
+            .cajaSamper {
+                position: static;
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    .footerbanda {
+        .redessociales img {
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .grid-contenedorbanda {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 900px 200px;
+        grid-template-areas:
+            "header "
+            "main"
+            "footer";
+
+        .headerbanda {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .titulobandaheader {
+                font-size: 50px;
+            }
+        }
+
+        .mainbanda {
+            .historia {
+                .textohistoria {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+/*---MEDIA-QUERIES-DISCOGRAFÍA---*/
+@media screen and (max-width: 1160px) {
+
+
+
+    .headerdg {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    .maindg {
+        .herodg {
+            div {
+                h2 {
+                    font-size: 15px;
+                }
+
+                img {
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    .headerdg {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .titulodgheader {
+            font-size: 50px;
+            margin-right: 60px;
+        }
+
+        nav {
+            #check:checked~ul {
+                right: 0;
+                position: absolute;
+                top: 120px;
+            }
+
+            .checkbtn {
+                display: block;
+
+            }
+
+            ul {
+                position: fixed;
+                background-color: rgba(0, 0, 0, 0.479);
+                top: 150px;
+                right: -100%;
+                text-align: center;
+                transition: all .5s;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                li {
+                    display: block;
+                    margin: 10px 0;
+                    line-height: 30px;
+
+                    a {
+                        font-size: 20px;
+
+                        &:hover,
+                        li a.active {
+                            background: none;
+
+                        }
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .grid-contenedordisco {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 2000px 200px;
+        grid-template-areas:
+            "header "
+            "main"
+            "footer";
+
+        .headerdg {
+
+            .titulodgheader {
+                font-size: 50px;
+                margin-right: 120px;
+            }
+        }
+
+        .maindg {
+            .herodg {
+                margin: 60px;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+
+            div {
+                margin-top: 20px;
+            }
+
+        }
+
+        .footerdg {
+            .redessociales img {
+                width: 50px;
+                height: 50px;
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+    .headerdg {
+        nav {
+            ul {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .headerdg {
+        nav {
+            ul {
+                margin-right: -50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .headerdg {
+        nav {
+            ul {
+                margin-right: -80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .headerdg {
+        nav {
+            ul {
+                margin-right: -123px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .headerdg {
+        nav {
+            ul {
+                margin-right: -183px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .headerdg {
+        nav {
+            ul {
+                margin-right: -243px;
+            }
+        }
+    }
+}
+
+
+/*---MEDIA-QUERIES-FECHAS---*/
+
+
+
+
+@media screen and (max-width: 1230px) {
+
+    .grid-contenedorfechas {
+        grid-template-rows: 150px 700px 200px;
+
+        .mainfechas {
+            width: 100%;
+            background-image: url(../img/Foto_de_fondo_para_fechas.jpg);
+            background-size: 100%;
+
+            .herofechas {
+                font-size: 18px;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+    .grid-contenedorfechas {
+        .headerfechas {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .titulofechasheader {
+                font-size: 50px;
+                margin-right: 60px;
+            }
+
+            nav {
+                #check:checked~ul {
+                    right: 0;
+                    position: absolute;
+                    top: 120px;
+                }
+
+                .checkbtn {
+                    display: block;
+
+                }
+
+                ul {
+                    position: fixed;
+                    padding-right: 30px;
+                    background-color: rgba(0, 0, 0, 0.479);
+                    top: 150px;
+                    right: -100%;
+                    text-align: center;
+                    transition: all .5s;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    li {
+                        display: block;
+                        margin: 10px 0;
+                        line-height: 30px;
+
+                        a {
+                            font-size: 20px;
+
+                            &:hover,
+                            li a.active {
+                                background: none;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: 780px) {
+
+    .grid-contenedorfechas {
+        .footerfechas {
+
+            .redessociales {
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width: 570px) {
+    .grid-contenedorfechas {
+
+        .headerfechas {
+            .titulofechasheader {
+                margin-right: 0px;
+                margin-left: 0px;
+
+            }
+        }
+
+        .mainfechas {
+            width: 100%;
+            background-image: url(../img/Foto_de_fondo_para_fechas.jpg);
+            background-size: 100%;
+
+            .herofechas {
+                font-size: 12px;
+            }
+
+        }
+    }
+
+
+
+}
+
+/*---MEDIA-QUERIES-CONTACTO---*/
+
+@media screen and (max-width: 980px) {
+    .grid-contenedorcontacto {
+        .headercontacto {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .titulocontactoheader {
+                font-size: 50px;
+                margin-right: 60px;
+            }
+
+            nav {
+                #check:checked~ul {
+                    right: 0;
+                    position: absolute;
+                    top: 120px;
+                }
+
+                .checkbtn {
+                    display: block;
+
+                }
+
+                ul {
+                    position: fixed;
+                    padding-right: 30px;
+                    background-color: rgba(0, 0, 0, 0.479);
+                    top: 150px;
+                    right: -100%;
+                    text-align: center;
+                    transition: all .5s;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    li {
+                        display: block;
+                        margin: 10px 0;
+                        line-height: 30px;
+
+                        a {
+                            font-size: 20px;
+
+                            &:hover,
+                            li a.active {
+                                background: none;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 780px) {
+
+    .grid-contenedorcontacto {
+        .headercontacto {
+            .titulocontactoheader {
+                font-size: 30px;
+            }
+
+        }
+
+        .maincontacto {
+            background-size: contain;
+            background-position: center;
+            height: 1000px;
+
+            .herocontacto {
+                form {
+                    font-size: 20px;
+
+                    div {
+                        input {
+                            height: 20px;
+                        }
+                    }
+
+                    .enviar {
+                        input {
+                            font-size: 15px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .footercontacto {
+
+            .redessociales {
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 520px) {
+
+
+    .herocontacto form {
+        font-size: 20px;
+    }
+
+    .herocontacto form div input {
+        height: 20px;
+    }
+
+    .headercontacto nav ul li {
+        margin-left: -30px;
+    }
+
+    .dejatumsj textarea {
+        width: 200px;
+        height: 130px;
+    }
+}
+
+/*---MEDIA-QUERIES-NOTICIAS---*/
+
+@media screen and (max-width: 1150px) {
+
+    .grid-contenedornoticias {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 2000px 200px;
+        gap: 0px 0px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+    }
+
+    .mainnoticias {
+        background-image: url(../img/foto_banda_para_noticias.jpg);
+        background-size: contain;
+        height: 2000px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+
+    .mainnoticias div img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 10%;
+    }
+
+    .mainnoticias div a {
+        margin-top: 30px;
+        text-anchor: start;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .grid-contenedornoticias {
+        .headernoticias {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .titulocontactonoticias {
+                font-size: 50px;
+                margin-right: 60px;
+            }
+
+            nav {
+                #check:checked~ul {
+                    right: 0;
+                    position: absolute;
+                    top: 120px;
+                }
+
+                .checkbtn {
+                    display: block;
+
+                }
+
+                ul {
+                    position: fixed;
+                    padding-right: 30px;
+                    background-color: rgba(0, 0, 0, 0.479);
+                    top: 150px;
+                    right: -100%;
+                    text-align: center;
+                    transition: all .5s;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    li {
+                        display: block;
+                        margin: 10px 0;
+                        line-height: 30px;
+
+                        a {
+                            font-size: 20px;
+
+                            &:hover,
+                            li a.active {
+                                background: none;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .mainnoticias {
+            div {
+                a {
+                    font-size: 13px;
+                    margin-top: 30px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: small;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: 780px) {
+    .grid-contenedornoticias {
+        .footernoticias {
+
+            .redessociales {
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}

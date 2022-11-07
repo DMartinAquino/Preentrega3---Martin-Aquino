@@ -12,25 +12,28 @@
         "hero hero hero"
         "videos videos videos"
         "galeria galeria galeria";
-    
+
     .hero {
-        background-image: url(../img/Foto\ banda\ Hero\ section.jpg);
+        background-image: url(../img/Foto_banda_herosection.jpg);
         height: calc(150vh - 137px);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         grid-area: hero;
+
         div {
             flex-direction: column;
             text-align: center;
-            margin-top: 30%;   
+            margin-top: 30%;
+
             .sudamericatour {
                 color: #DFE5EB;
                 text-decoration: none;
                 font-family: 'Bebas Neue', cursive;
                 font-size: 100px;
                 text-shadow: -5px -3px 5px rgba(136, 123, 123, 0.36);
-            }   
+            }
+
             .adquirirentradas {
                 background: transparent;
                 color: #DFE5EB;
@@ -42,16 +45,49 @@
                 border: 3px solid #DFE5EB;
                 border-radius: 10px;
                 padding: 2px;
-                /*position: absolute; top: 650px; left: 600px;*/
                 text-shadow: -5px -3px 5px rgba(136, 123, 123, 0.36);
                 animation: pulse 1.5s infinite;
-                transition: 1s ease-out
-                {
-                    transform: scale(1.2);
+                transition: 1s ease-out;
+                &:hover {
+                    transform: scale(1.5);
                     color: white;
                 }
-            }  
-        }        
+            }
+        }
+    }
+
+    .videos {
+        background-color: black;
+        align-items: center;
+        grid-area: videos;
+        display: flex;
+        justify-content: space-evenly;
+
+        .video {
+            display: inline-block;
+            width: 400px;
+        }
+    }
+
+    .galeriadefotos {
+        background-color: black;
+        grid-area: galeria;
+        width: 100%;
+        height: 500px;
+        align-items: center;
+
+        div {
+            .carousel-inner {
+                div {
+                    img {
+                        width: 95%;
+                        height: 500px;
+                        object-fit: cover;
+                        margin: auto;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
     }
 }
-

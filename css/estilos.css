@@ -1,0 +1,1622 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*--GRILLA-INDEX*/
+.grid-contenedor {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 1700px 200px;
+  gap: 0px 0px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+/*--GRILLA-BANDA*/
+.grid-contenedorbanda {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 900px 200px;
+  gap: 0px 0px;
+  grid-template-areas: "header header" "main main" "footer footer"; }
+
+/*--GRILLA-DISCOGRAFIA*/
+.grid-contenedordisco {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 800px 200px;
+  gap: 0px 0px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+/*--GRILLA-FECHAS*/
+.grid-contenedorfechas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 900px 200px;
+  gap: 0px 0px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+/*--GRILLA-CONTACTO*/
+.grid-contenedorcontacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 900px 200px;
+  gap: 0px 0px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+/*--GRILLA-NOTICIAS*/
+.grid-contenedornoticias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 800px 200px;
+  gap: 0px 0px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+/*-------HEADER-INDEX ----------*/
+.headerindex {
+  background-color: black;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .headerindex img {
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px; }
+  .headerindex .nombredebandaheader {
+    color: #A47E3B;
+    box-sizing: border-box;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000;
+    justify-content: center; }
+  .headerindex nav {
+    display: flex; }
+    .headerindex nav #check {
+      display: none; }
+    .headerindex nav .checkbtn {
+      color: #A47E3B;
+      font-size: 30px;
+      margin-right: 20px;
+      cursor: pointer;
+      display: none; }
+    .headerindex nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-right: 20px; }
+      .headerindex nav ul li {
+        background-color: #A47E3B;
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        margin-left: 10px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        text-decoration-color: black; }
+        .headerindex nav ul li a {
+          text-decoration: none;
+          color: black;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 25px;
+          font-weight: 600;
+          padding-left: 5px;
+          padding-right: 5px; }
+          .headerindex nav ul li a:hover {
+            color: rgba(0, 0, 0, 0.801); }
+
+/*-------HEADER-BANDA ----------*/
+.headerbanda {
+  background-color: black;
+  display: flex;
+  grid-area: header;
+  justify-content: space-between;
+  align-items: center; }
+  .headerbanda .titulobandaheader {
+    color: #A47E3B;
+    box-sizing: border-box;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000;
+    justify-content: center; }
+  .headerbanda nav {
+    display: flex; }
+    .headerbanda nav #check {
+      display: none; }
+    .headerbanda nav .checkbtn {
+      color: #A47E3B;
+      font-size: 30px;
+      margin-right: 20px;
+      cursor: pointer;
+      display: none; }
+    .headerbanda nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 20px; }
+      .headerbanda nav ul li {
+        background-color: #A47E3B;
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        margin-left: 10px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        text-decoration-color: black; }
+        .headerbanda nav ul li a {
+          text-decoration: none;
+          color: black;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 25px;
+          font-weight: 600;
+          padding-left: 5px;
+          padding-right: 5px; }
+          .headerbanda nav ul li a:hover {
+            color: rgba(0, 0, 0, 0.801); }
+
+/*-------HEADER-DISCOGRAFIA ----------*/
+.headerdg {
+  background-color: black;
+  display: flex;
+  grid-area: header;
+  justify-content: space-between;
+  align-items: center; }
+  .headerdg img {
+    width: 140px;
+    height: 140px;
+    margin-right: 150px; }
+  .headerdg .titulodgheader {
+    color: #A47E3B;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000; }
+  .headerdg nav {
+    display: flex; }
+    .headerdg nav #check {
+      display: none; }
+    .headerdg nav .checkbtn {
+      color: #A47E3B;
+      font-size: 30px;
+      margin-right: 20px;
+      cursor: pointer;
+      display: none; }
+    .headerdg nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 20px; }
+      .headerdg nav ul li {
+        background-color: #A47E3B;
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        margin-left: 10px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        text-decoration-color: black; }
+        .headerdg nav ul li a {
+          text-decoration: none;
+          color: black;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 25px;
+          font-weight: 600;
+          padding-left: 5px;
+          padding-right: 5px; }
+          .headerdg nav ul li a:hover {
+            color: rgba(0, 0, 0, 0.801); }
+
+/*-------HEADER-DISCOGRAFIA ----------*/
+.headerfechas {
+  background-color: black;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .headerfechas .titulofechasheader {
+    color: #A47E3B;
+    box-sizing: border-box;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000;
+    margin-top: 20px;
+    margin-left: 90px; }
+  .headerfechas nav {
+    display: flex; }
+    .headerfechas nav #check {
+      display: none; }
+    .headerfechas nav .checkbtn {
+      color: #A47E3B;
+      font-size: 30px;
+      margin-right: 20px;
+      cursor: pointer;
+      display: none; }
+    .headerfechas nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 20px; }
+      .headerfechas nav ul li {
+        background-color: #A47E3B;
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        margin-left: 10px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        text-decoration-color: black; }
+        .headerfechas nav ul li a {
+          text-decoration: none;
+          color: black;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 25px;
+          font-weight: 600;
+          padding-left: 5px;
+          padding-right: 5px; }
+          .headerfechas nav ul li a:hover {
+            color: rgba(0, 0, 0, 0.801); }
+
+/*-------HEADER-CONTACTO ----------*/
+.headercontacto {
+  background-color: black;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .headercontacto .titulocontactoheader {
+    color: #A47E3B;
+    box-sizing: border-box;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000; }
+  .headercontacto nav {
+    display: flex; }
+    .headercontacto nav #check {
+      display: none; }
+    .headercontacto nav .checkbtn {
+      color: #A47E3B;
+      font-size: 30px;
+      margin-right: 20px;
+      cursor: pointer;
+      display: none; }
+    .headercontacto nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 20px; }
+      .headercontacto nav ul li {
+        background-color: #A47E3B;
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        margin-left: 10px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        text-decoration-color: black; }
+        .headercontacto nav ul li a {
+          text-decoration: none;
+          color: black;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 25px;
+          font-weight: 600;
+          padding-left: 5px;
+          padding-right: 5px; }
+          .headercontacto nav ul li a:hover {
+            color: rgba(0, 0, 0, 0.801); }
+
+/*-------HEADER-NOTICIAS ----------*/
+.headernoticias {
+  background-color: black;
+  display: flex;
+  grid-area: header;
+  justify-content: space-between;
+  align-items: center; }
+  .headernoticias .titulocontactonoticias {
+    color: #A47E3B;
+    box-sizing: border-box;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000;
+    margin-top: 20px;
+    margin-left: 50px; }
+  .headernoticias nav {
+    display: flex; }
+    .headernoticias nav #check {
+      display: none; }
+    .headernoticias nav .checkbtn {
+      color: #A47E3B;
+      font-size: 30px;
+      margin-right: 20px;
+      cursor: pointer;
+      display: none; }
+    .headernoticias nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 20px; }
+      .headernoticias nav ul li {
+        background-color: #A47E3B;
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        margin-left: 10px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        text-decoration-color: black; }
+        .headernoticias nav ul li a {
+          text-decoration: none;
+          color: black;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 25px;
+          font-weight: 600;
+          padding-left: 5px;
+          padding-right: 5px; }
+          .headernoticias nav ul li a:hover {
+            color: rgba(0, 0, 0, 0.801); }
+
+/*---MAIN-INDEX---*/
+.mainindex {
+  width: 100%;
+  height: 100%;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 800px 400px 500px;
+  gap: 0px 0px;
+  grid-template-areas: "hero hero hero" "videos videos videos" "galeria galeria galeria"; }
+  .mainindex .hero {
+    background-image: url(../img/Foto_banda_herosection.jpg);
+    height: calc(150vh - 137px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: hero; }
+    .mainindex .hero div {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 30%; }
+      .mainindex .hero div .sudamericatour {
+        color: #DFE5EB;
+        text-decoration: none;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 100px;
+        text-shadow: -5px -3px 5px rgba(136, 123, 123, 0.36); }
+      .mainindex .hero div .adquirirentradas {
+        background: transparent;
+        color: #DFE5EB;
+        text-decoration: none;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+        margin-bottom: 30px;
+        align-items: center;
+        border: 3px solid #DFE5EB;
+        border-radius: 10px;
+        padding: 2px;
+        text-shadow: -5px -3px 5px rgba(136, 123, 123, 0.36);
+        animation: pulse 1.5s infinite;
+        transition: 1s ease-out; }
+        .mainindex .hero div .adquirirentradas:hover {
+          transform: scale(1.5);
+          color: white; }
+  .mainindex .videos {
+    background-color: black;
+    align-items: center;
+    grid-area: videos;
+    display: flex;
+    justify-content: space-evenly; }
+    .mainindex .videos .video {
+      display: inline-block;
+      width: 400px; }
+  .mainindex .galeriadefotos {
+    background-color: black;
+    grid-area: galeria;
+    width: 100%;
+    height: 500px;
+    align-items: center; }
+    .mainindex .galeriadefotos div .carousel-inner div img {
+      width: 95%;
+      height: 500px;
+      object-fit: cover;
+      margin: auto;
+      padding-bottom: 20px; }
+
+/*---MAIN-INDEX---*/
+.mainbanda {
+  height: 1000px;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas: "historia integrantes" "historia integrantes"; }
+  .mainbanda .herobanda {
+    background-color: #141313;
+    height: calc(150vh - 137px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 900px;
+    grid-area: integrantes;
+    display: flex;
+    justify-content: center; }
+    .mainbanda .herobanda .cajaLuciano {
+      text-align: center;
+      color: #A47E3B;
+      font-size: 11px;
+      font-weight: 900;
+      position: absolute;
+      top: 220px;
+      right: 330px; }
+      .mainbanda .herobanda .cajaLuciano h2 {
+        margin: 15px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 15px;
+        font-weight: 20px; }
+      .mainbanda .herobanda .cajaLuciano .fotointegrantes {
+        padding-top: 2px;
+        width: 250px;
+        height: 250px;
+        border: 7px solid #A47E3B;
+        border-radius: 100%; }
+    .mainbanda .herobanda .cajaCena {
+      text-align: center;
+      color: #A47E3B;
+      font-size: 11px;
+      font-weight: 900;
+      position: absolute;
+      top: 370px;
+      right: 30px; }
+      .mainbanda .herobanda .cajaCena h2 {
+        margin: 15px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 15px;
+        font-weight: 20px; }
+      .mainbanda .herobanda .cajaCena .fotointegrantes {
+        padding-top: 2px;
+        width: 250px;
+        height: 250px;
+        border: 7px solid #A47E3B;
+        border-radius: 100%; }
+    .mainbanda .herobanda .cajaBarroso {
+      text-align: center;
+      color: #A47E3B;
+      font-size: 11px;
+      font-weight: 900;
+      position: absolute;
+      top: 570px;
+      right: 330px; }
+      .mainbanda .herobanda .cajaBarroso h2 {
+        margin: 15px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 15px;
+        font-weight: 20px; }
+      .mainbanda .herobanda .cajaBarroso .fotointegrantes {
+        padding-top: 2px;
+        width: 250px;
+        height: 250px;
+        border: 7px solid #A47E3B;
+        border-radius: 100%; }
+    .mainbanda .herobanda .cajaSamper {
+      text-align: center;
+      color: #A47E3B;
+      font-size: 11px;
+      font-weight: 900;
+      position: absolute;
+      top: 720px;
+      right: 30px; }
+      .mainbanda .herobanda .cajaSamper h2 {
+        margin: 15px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 15px;
+        font-weight: 20px; }
+      .mainbanda .herobanda .cajaSamper .fotointegrantes {
+        padding-top: 2px;
+        width: 250px;
+        height: 250px;
+        border: 7px solid #A47E3B;
+        border-radius: 100%; }
+  .mainbanda .historia {
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    color: #A47E3B;
+    background-color: #141313;
+    background-size: cover;
+    height: 900px;
+    grid-area: historia; }
+    .mainbanda .historia h3 {
+      text-align: center; }
+    .mainbanda .historia .titulohistoria {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 35px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+
+/*---MAIN-DISCOGRAFÍA---*/
+.maindg {
+  background-color: #a47d3b96;
+  grid-area: main; }
+  .maindg .herodg {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    height: 600px;
+    margin-top: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .maindg .herodg .li .laidentidad {
+      width: 230px;
+      height: 230px; }
+    .maindg .herodg .li ol li {
+      list-style-position: inside; }
+    .maindg .herodg .enp .elnuevoproceso {
+      width: 230px;
+      height: 230px; }
+    .maindg .herodg .enp ol li {
+      list-style-position: inside; }
+    .maindg .herodg .ar .arcos {
+      width: 230px;
+      height: 230px; }
+    .maindg .herodg .ar ol li {
+      list-style-position: inside; }
+    .maindg .herodg .le .laestructura {
+      width: 230px;
+      height: 230px; }
+    .maindg .herodg .le ol li {
+      list-style-position: inside; }
+
+/*---MAIN-FECHAS---*/
+.mainfechas {
+  background-image: url(../img/Foto_de_fondo_para_fechas.jpg);
+  background-size: cover;
+  height: 900px;
+  grid-area: main; }
+  .mainfechas .herofechas {
+    width: 100%;
+    height: 500px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 50px; }
+    .mainfechas .herofechas .lima {
+      border: 5px solid white;
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      margin-bottom: 20px;
+      padding: 5px 5px; }
+      .mainfechas .herofechas .lima .limafecha {
+        font-size: 75%; }
+      .mainfechas .herofechas .lima .comprar {
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+        border: 3px solid #DFE5EB;
+        border-radius: 5px;
+        padding: 5px 15px; }
+    .mainfechas .herofechas .asuncion {
+      border: 5px solid white;
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      margin-bottom: 20px;
+      padding: 5px 5px; }
+      .mainfechas .herofechas .asuncion .asuncionfecha {
+        font-size: 75%; }
+      .mainfechas .herofechas .asuncion .comprar {
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+        border: 3px solid #DFE5EB;
+        border-radius: 5px;
+        padding: 5px 15px; }
+    .mainfechas .herofechas .rio {
+      border: 5px solid white;
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      margin-bottom: 20px;
+      padding: 5px 5px; }
+      .mainfechas .herofechas .rio .riofecha {
+        font-size: 75%; }
+      .mainfechas .herofechas .rio .comprar {
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+        border: 3px solid #DFE5EB;
+        border-radius: 5px;
+        padding: 5px 15px; }
+
+/*---MAIN-CONTACTO---*/
+.maincontacto {
+  grid-area: main;
+  background: linear-gradient(rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.308)), url(../img/imagen_fondo_para_contacto.jpg);
+  background-size: cover;
+  height: 900px;
+  font-family: 'Bebas Neue', cursive;
+  color: #dfdbdb;
+  background-attachment: fixed; }
+  .maincontacto .herocontacto {
+    width: 70%;
+    margin: auto; }
+    .maincontacto .herocontacto form {
+      font-size: 30px;
+      border: 5px solid #DFE5EB;
+      padding: 20px;
+      flex-direction: column;
+      text-align: center;
+      margin: auto;
+      margin-top: 40px; }
+      .maincontacto .herocontacto form div h2 {
+        padding-bottom: 10px;
+        align-items: center; }
+      .maincontacto .herocontacto form div input {
+        width: 30%;
+        height: 40px; }
+      .maincontacto .herocontacto form .dejatumsj {
+        padding-top: 20px; }
+      .maincontacto .herocontacto form .enviar input {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px; }
+
+/*---MAIN-NOTICIAS---*/
+.mainnoticias {
+  background-image: url(../img/foto_banda_para_noticias.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  background-position: center;
+  display: flex;
+  justify-content: space-evenly;
+  grid-area: main; }
+  .mainnoticias .noticia1 {
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    color: #d1ad6e;
+    background-color: rgba(0, 0, 0, 0.685);
+    background-size: contain;
+    width: 300px;
+    height: 500px;
+    text-decoration: none;
+    margin-top: 10%;
+    padding-top: 20px; }
+    .mainnoticias .noticia1 .fotonoticia1 {
+      width: 330px;
+      height: 330px;
+      object-fit: cover; }
+    .mainnoticias .noticia1 .linknoticia1 {
+      color: #dddcdc;
+      text-decoration: none;
+      font-size: medium;
+      font-weight: 700;
+      text-shadow: 1px -3px 4px rgba(226, 221, 221, 0.4);
+      margin: 40px 0%; }
+    .mainnoticias .noticia1 p {
+      margin-top: 10%; }
+  .mainnoticias .noticia2 {
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    color: #d1ad6e;
+    background-color: rgba(0, 0, 0, 0.685);
+    background-size: contain;
+    width: 300px;
+    height: 500px;
+    text-decoration: none;
+    margin-top: 10%;
+    padding-top: 20px; }
+    .mainnoticias .noticia2 .fotonoticia2 {
+      width: 330px;
+      height: 330px;
+      object-fit: cover; }
+    .mainnoticias .noticia2 .linknoticia2 {
+      color: #dddcdc;
+      text-decoration: none;
+      font-size: medium;
+      font-weight: 700;
+      text-shadow: 1px -3px 4px rgba(226, 221, 221, 0.4); }
+    .mainnoticias .noticia2 p {
+      margin-top: 10%; }
+  .mainnoticias .noticia3 {
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    color: #d1ad6e;
+    background-color: rgba(0, 0, 0, 0.685);
+    background-size: contain;
+    width: 300px;
+    height: 500px;
+    text-decoration: none;
+    margin-top: 10%;
+    padding-top: 20px; }
+    .mainnoticias .noticia3 .fotonoticia3 {
+      width: 330px;
+      height: 330px;
+      object-fit: cover; }
+    .mainnoticias .noticia3 .linknoticia3 {
+      color: #dddcdc;
+      text-decoration: none;
+      font-size: medium;
+      font-weight: 700;
+      text-shadow: 1px -3px 4px rgba(226, 221, 221, 0.4); }
+    .mainnoticias .noticia3 p {
+      margin-top: 10%; }
+
+/*---FOOTER-INDEX---*/
+.footerindex {
+  align-items: center;
+  text-align: center;
+  background-color: #A47E3B;
+  height: 100%;
+  width: 100%;
+  grid-area: footer; }
+  .footerindex .redessociales {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; }
+    .footerindex .redessociales a .instagram {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerindex .redessociales a .instagram:hover {
+        transform: scale(1.3); }
+    .footerindex .redessociales a .facebook {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerindex .redessociales a .facebook:hover {
+        transform: scale(1.3); }
+    .footerindex .redessociales a .twitter {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerindex .redessociales a .twitter:hover {
+        transform: scale(1.3); }
+    .footerindex .redessociales a .youtube {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerindex .redessociales a .youtube:hover {
+        transform: scale(1.3); }
+    .footerindex .redessociales a .spotify {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerindex .redessociales a .spotify:hover {
+        transform: scale(1.3); }
+  .footerindex .copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center; }
+
+/*---FOOTER-BANDA---*/
+.footerbanda {
+  align-items: center;
+  text-align: center;
+  background-color: #A47E3B;
+  height: 100%;
+  width: 100%;
+  grid-area: footer; }
+  .footerbanda .redessociales {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; }
+    .footerbanda .redessociales a .instagram {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerbanda .redessociales a .instagram:hover {
+        transform: scale(1.3); }
+    .footerbanda .redessociales a .facebook {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerbanda .redessociales a .facebook:hover {
+        transform: scale(1.3); }
+    .footerbanda .redessociales a .twitter {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerbanda .redessociales a .twitter:hover {
+        transform: scale(1.3); }
+    .footerbanda .redessociales a .youtube {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerbanda .redessociales a .youtube:hover {
+        transform: scale(1.3); }
+    .footerbanda .redessociales a .spotify {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerbanda .redessociales a .spotify:hover {
+        transform: scale(1.3); }
+  .footerbanda .copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center; }
+
+/*---FOOTER-DISCOGRAFIA---*/
+.footerdg {
+  align-items: center;
+  text-align: center;
+  background-color: #A47E3B;
+  height: 100%;
+  width: 100%;
+  grid-area: footer; }
+  .footerdg .redessociales {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; }
+    .footerdg .redessociales a .instagram {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerdg .redessociales a .instagram:hover {
+        transform: scale(1.3); }
+    .footerdg .redessociales a .facebook {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerdg .redessociales a .facebook:hover {
+        transform: scale(1.3); }
+    .footerdg .redessociales a .twitter {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerdg .redessociales a .twitter:hover {
+        transform: scale(1.3); }
+    .footerdg .redessociales a .youtube {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerdg .redessociales a .youtube:hover {
+        transform: scale(1.3); }
+    .footerdg .redessociales a .spotify {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerdg .redessociales a .spotify:hover {
+        transform: scale(1.3); }
+  .footerdg .copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center; }
+
+/*---FOOTER-FECHAS---*/
+.footerfechas {
+  align-items: center;
+  text-align: center;
+  background-color: #A47E3B;
+  height: 100%;
+  width: 100%;
+  grid-area: footer; }
+  .footerfechas .redessociales {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; }
+    .footerfechas .redessociales a .instagram {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerfechas .redessociales a .instagram:hover {
+        transform: scale(1.3); }
+    .footerfechas .redessociales a .facebook {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerfechas .redessociales a .facebook:hover {
+        transform: scale(1.3); }
+    .footerfechas .redessociales a .twitter {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerfechas .redessociales a .twitter:hover {
+        transform: scale(1.3); }
+    .footerfechas .redessociales a .youtube {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerfechas .redessociales a .youtube:hover {
+        transform: scale(1.3); }
+    .footerfechas .redessociales a .spotify {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footerfechas .redessociales a .spotify:hover {
+        transform: scale(1.3); }
+  .footerfechas .copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center; }
+
+/*---FOOTER-CONTACTO---*/
+.footercontacto {
+  align-items: center;
+  text-align: center;
+  background-color: #A47E3B;
+  height: 100%;
+  width: 100%;
+  grid-area: footer; }
+  .footercontacto .redessociales {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; }
+    .footercontacto .redessociales a .instagram {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footercontacto .redessociales a .instagram:hover {
+        transform: scale(1.3); }
+    .footercontacto .redessociales a .facebook {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footercontacto .redessociales a .facebook:hover {
+        transform: scale(1.3); }
+    .footercontacto .redessociales a .twitter {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footercontacto .redessociales a .twitter:hover {
+        transform: scale(1.3); }
+    .footercontacto .redessociales a .youtube {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footercontacto .redessociales a .youtube:hover {
+        transform: scale(1.3); }
+    .footercontacto .redessociales a .spotify {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footercontacto .redessociales a .spotify:hover {
+        transform: scale(1.3); }
+  .footercontacto .copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center; }
+
+/*---FOOTER-NOTICIAS---*/
+.footernoticias {
+  align-items: center;
+  text-align: center;
+  background-color: #A47E3B;
+  height: 100%;
+  width: 100%;
+  grid-area: footer; }
+  .footernoticias .redessociales {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; }
+    .footernoticias .redessociales a .instagram {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footernoticias .redessociales a .instagram:hover {
+        transform: scale(1.3); }
+    .footernoticias .redessociales a .facebook {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footernoticias .redessociales a .facebook:hover {
+        transform: scale(1.3); }
+    .footernoticias .redessociales a .twitter {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footernoticias .redessociales a .twitter:hover {
+        transform: scale(1.3); }
+    .footernoticias .redessociales a .youtube {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footernoticias .redessociales a .youtube:hover {
+        transform: scale(1.3); }
+    .footernoticias .redessociales a .spotify {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      transition: 0.7s ease-out; }
+      .footernoticias .redessociales a .spotify:hover {
+        transform: scale(1.3); }
+  .footernoticias .copyright {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center; }
+
+/*---MEDIA-QUERIES-INDEX---*/
+@media screen and (max-width: 1240px) {
+  .mainindex .hero {
+    width: 100%;
+    height: 100%;
+    background-size: cover; }
+    .mainindex .hero div .sudamericatour {
+      font-size: 70px; }
+  .mainindex .videos .video {
+    width: 300px; } }
+
+@media screen and (max-width: 1100px) {
+  .headerindex nav ul li a {
+    font-size: 17px; }
+  .mainindex .galeriadefotos div .carousel-inner div div img {
+    width: 80%;
+    height: 400px; } }
+
+@media screen and (max-width: 980px) {
+  .headerindex nav #check:checked ~ ul {
+    right: 0;
+    position: absolute;
+    top: 120px; }
+  .headerindex nav .checkbtn {
+    display: block; }
+  .headerindex nav ul {
+    position: fixed;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0.479);
+    top: 150px;
+    right: -120%;
+    text-align: center;
+    transition: all .5s;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .headerindex nav ul li {
+      display: block;
+      margin: 10px 0;
+      line-height: 30px; }
+      .headerindex nav ul li a {
+        font-size: 20px; }
+        .headerindex nav ul li a:hover,
+        .headerindex nav ul li a li a.active {
+          background: none; }
+  .mainindex .hero {
+    background-image: url(../img/Foto_banda_Hero_section_para_dispositivo_mobil.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100%; }
+    .mainindex .hero div {
+      text-align: center;
+      align-items: center; }
+      .mainindex .hero div .sudamericatour {
+        font-size: 40px; }
+      .mainindex .hero div .adquirirentradas {
+        font-size: 14px; }
+  .mainindex .videos .video {
+    width: 200px;
+    height: 200px; }
+  .mainindex .galeriadefotos div .carousel-inner div div img {
+    width: 90%; } }
+
+@media screen and (max-width: 780px) {
+  .grid-contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1200px 200px;
+    grid-template-areas: "header " "main" "footer"; }
+    .grid-contenedor .headerindex .nombredebandaheader {
+      font-size: 50px; }
+    .grid-contenedor .headerindex nav .checkbtn {
+      margin-right: 50px; }
+    .grid-contenedor .mainindex {
+      grid-template-columns: 1fr;
+      grid-template-rows: 300px 400px 500px;
+      gap: 0px 0px;
+      grid-template-areas: "hero" "videos" "galeria"; }
+      .grid-contenedor .mainindex .hero {
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        height: 100%; }
+        .grid-contenedor .mainindex .hero div {
+          margin-top: 25%; }
+      .grid-contenedor .mainindex .videos .video {
+        width: 170px; }
+    .grid-contenedor .footerindex .redessociales img {
+      width: 50px;
+      height: 50px; } }
+
+@media screen and (max-width: 630px) {
+  .headerindex img {
+    width: 100px;
+    height: 100px; }
+  .headerindex .nombredebandaheader {
+    font-size: 50px; } }
+
+@media screen and (max-width: 425px) {
+  .grid-contenedor .headerindex nav ul {
+    margin-right: -80px; } }
+
+@media screen and (max-width: 360px) {
+  .grid-contenedor .headerindex nav ul {
+    margin-right: -140px; } }
+
+/*---MEDIA-QUERIES-BANDA---*/
+@media screen and (min-width: 2100px) {
+  .grid-contenedorbanda {
+    grid-template-rows: 150px 1200px 200px; }
+    .grid-contenedorbanda .herobanda {
+      height: 1200px; }
+      .grid-contenedorbanda .herobanda .cajaLuciano {
+        position: absolute;
+        right: 630px; }
+      .grid-contenedorbanda .herobanda .cajaCena {
+        position: absolute;
+        right: 230px; }
+      .grid-contenedorbanda .herobanda .cajaBarroso {
+        position: absolute;
+        right: 630px; }
+      .grid-contenedorbanda .herobanda .cajaSamper {
+        position: absolute;
+        right: 230px; }
+    .grid-contenedorbanda .historia {
+      height: 1200px; }
+      .grid-contenedorbanda .historia .titulohistoria {
+        font-size: 45px; }
+      .grid-contenedorbanda .historia .textohistoria {
+        font-size: 40px; } }
+
+@media screen and (max-width: 2445px) {
+  .herobanda .cajaLuciano {
+    position: absolute;
+    right: 330px; }
+  .herobanda .cajaCena {
+    position: absolute;
+    right: 50px; }
+  .herobanda .cajaBarroso {
+    position: absolute;
+    right: 330px; }
+  .herobanda .cajaSamper {
+    position: absolute;
+    right: 50px; } }
+
+@media screen and (max-width: 1360px) {
+  .mainbanda .herobanda .cajaLuciano {
+    position: absolute;
+    right: 250px;
+    font-size: 9px; }
+    .mainbanda .herobanda .cajaLuciano .fotointegrantes {
+      padding-top: 2px;
+      width: 180px;
+      height: 180px; }
+  .mainbanda .herobanda .cajaCena {
+    position: absolute;
+    right: 30px; }
+    .mainbanda .herobanda .cajaCena .fotointegrantes {
+      padding-top: 2px;
+      width: 180px;
+      height: 180px; }
+  .mainbanda .herobanda .cajaBarroso {
+    position: absolute;
+    right: 250px; }
+    .mainbanda .herobanda .cajaBarroso .fotointegrantes {
+      padding-top: 2px;
+      width: 180px;
+      height: 180px; }
+  .mainbanda .herobanda .cajaSamper {
+    position: absolute;
+    right: 30px; }
+    .mainbanda .herobanda .cajaSamper .fotointegrantes {
+      padding-top: 2px;
+      width: 180px;
+      height: 180px; } }
+
+.historia .textohistoria {
+  font-size: 15px;
+  padding-top: 100px; }
+
+@media screen and (max-width: 1060px) {
+  .mainbanda .herobanda .cajaLuciano {
+    position: absolute;
+    right: 200px; }
+    .mainbanda .herobanda .cajaLuciano h2 {
+      margin: 20px;
+      font-size: 15px;
+      font-weight: 10px; }
+    .mainbanda .herobanda .cajaLuciano .fotointegrantes {
+      width: 140px;
+      height: 140px; }
+  .mainbanda .herobanda .cajaCena {
+    position: absolute;
+    right: 10px; }
+    .mainbanda .herobanda .cajaCena h2 {
+      margin: 20px;
+      font-size: 15px;
+      font-weight: 10px; }
+    .mainbanda .herobanda .cajaCena .fotointegrantes {
+      width: 140px;
+      height: 140px; }
+  .mainbanda .herobanda .cajaBarroso {
+    position: absolute;
+    right: 200px; }
+    .mainbanda .herobanda .cajaBarroso h2 {
+      margin: 20px;
+      font-size: 15px;
+      font-weight: 10px; }
+    .mainbanda .herobanda .cajaBarroso .fotointegrantes {
+      width: 140px;
+      height: 140px; }
+  .mainbanda .herobanda .cajaSamper {
+    position: absolute;
+    right: 10px; }
+    .mainbanda .herobanda .cajaSamper h2 {
+      margin: 20px;
+      font-size: 15px;
+      font-weight: 10px; }
+    .mainbanda .herobanda .cajaSamper .fotointegrantes {
+      width: 140px;
+      height: 140px; } }
+
+@media screen and (max-width: 980px) {
+  .headerbanda nav #check:checked ~ ul {
+    right: 0;
+    position: absolute;
+    top: 120px; }
+  .headerbanda nav .checkbtn {
+    display: block; }
+  .headerbanda nav ul {
+    position: fixed;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0.479);
+    top: 150px;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .headerbanda nav ul li {
+      display: block;
+      margin: 10px 0;
+      line-height: 30px; }
+      .headerbanda nav ul li a {
+        font-size: 20px; }
+        .headerbanda nav ul li a:hover,
+        .headerbanda nav ul li a li a.active {
+          background: none; }
+  .mainbanda .herobanda {
+    flex-direction: column; }
+    .mainbanda .herobanda .cajaLuciano {
+      position: static; }
+    .mainbanda .herobanda .cajaCena {
+      position: static; }
+    .mainbanda .herobanda .cajaBarroso {
+      position: static; }
+    .mainbanda .herobanda .cajaSamper {
+      position: static; } }
+
+@media screen and (max-width: 780px) {
+  .footerbanda .redessociales img {
+    width: 50px;
+    height: 50px; } }
+
+@media screen and (max-width: 520px) {
+  .grid-contenedorbanda {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 900px 200px;
+    grid-template-areas: "header " "main" "footer"; }
+    .grid-contenedorbanda .headerbanda img {
+      width: 100px;
+      height: 100px; }
+    .grid-contenedorbanda .headerbanda .titulobandaheader {
+      font-size: 50px; }
+    .grid-contenedorbanda .mainbanda .historia .textohistoria {
+      font-size: 12px; } }
+
+/*---MEDIA-QUERIES-DISCOGRAFÍA---*/
+@media screen and (max-width: 1160px) {
+  .headerdg img {
+    width: 100px;
+    height: 100px; }
+  .headerdg nav ul li a {
+    font-size: 17px; }
+  .maindg .herodg div h2 {
+    font-size: 15px; }
+  .maindg .herodg div img {
+    width: 180px;
+    height: 180px; } }
+
+@media screen and (max-width: 980px) {
+  .headerdg img {
+    width: 100px;
+    height: 100px; }
+  .headerdg .titulodgheader {
+    font-size: 50px;
+    margin-right: 60px; }
+  .headerdg nav #check:checked ~ ul {
+    right: 0;
+    position: absolute;
+    top: 120px; }
+  .headerdg nav .checkbtn {
+    display: block; }
+  .headerdg nav ul {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.479);
+    top: 150px;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .headerdg nav ul li {
+      display: block;
+      margin: 10px 0;
+      line-height: 30px; }
+      .headerdg nav ul li a {
+        font-size: 20px; }
+        .headerdg nav ul li a:hover,
+        .headerdg nav ul li a li a.active {
+          background: none; } }
+
+@media screen and (max-width: 780px) {
+  .grid-contenedordisco {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 2000px 200px;
+    grid-template-areas: "header " "main" "footer"; }
+    .grid-contenedordisco .headerdg .titulodgheader {
+      font-size: 50px;
+      margin-right: 120px; }
+    .grid-contenedordisco .maindg .herodg {
+      margin: 60px;
+      text-align: center;
+      flex-wrap: wrap; }
+    .grid-contenedordisco .maindg div {
+      margin-top: 20px; }
+    .grid-contenedordisco .footerdg .redessociales img {
+      width: 50px;
+      height: 50px; } }
+
+@media screen and (max-width: 630px) {
+  .headerdg nav ul {
+    margin-right: 0px; } }
+
+@media screen and (max-width: 580px) {
+  .headerdg nav ul {
+    margin-right: -50px; } }
+
+@media screen and (max-width: 525px) {
+  .headerdg nav ul {
+    margin-right: -80px; } }
+
+@media screen and (max-width: 485px) {
+  .headerdg nav ul {
+    margin-right: -123px; } }
+
+@media screen and (max-width: 425px) {
+  .headerdg nav ul {
+    margin-right: -183px; } }
+
+@media screen and (max-width: 355px) {
+  .headerdg nav ul {
+    margin-right: -243px; } }
+
+/*---MEDIA-QUERIES-FECHAS---*/
+@media screen and (max-width: 1230px) {
+  .grid-contenedorfechas {
+    grid-template-rows: 150px 700px 200px; }
+    .grid-contenedorfechas .mainfechas {
+      width: 100%;
+      background-image: url(../img/Foto_de_fondo_para_fechas.jpg);
+      background-size: 100%; }
+      .grid-contenedorfechas .mainfechas .herofechas {
+        font-size: 18px; } }
+
+@media screen and (max-width: 980px) {
+  .grid-contenedorfechas .headerfechas img {
+    width: 100px;
+    height: 100px; }
+  .grid-contenedorfechas .headerfechas .titulofechasheader {
+    font-size: 50px;
+    margin-right: 60px; }
+  .grid-contenedorfechas .headerfechas nav #check:checked ~ ul {
+    right: 0;
+    position: absolute;
+    top: 120px; }
+  .grid-contenedorfechas .headerfechas nav .checkbtn {
+    display: block; }
+  .grid-contenedorfechas .headerfechas nav ul {
+    position: fixed;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0.479);
+    top: 150px;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .grid-contenedorfechas .headerfechas nav ul li {
+      display: block;
+      margin: 10px 0;
+      line-height: 30px; }
+      .grid-contenedorfechas .headerfechas nav ul li a {
+        font-size: 20px; }
+        .grid-contenedorfechas .headerfechas nav ul li a:hover,
+        .grid-contenedorfechas .headerfechas nav ul li a li a.active {
+          background: none; } }
+
+@media screen and (max-width: 780px) {
+  .grid-contenedorfechas .footerfechas .redessociales img {
+    width: 50px;
+    height: 50px; } }
+
+@media screen and (max-width: 570px) {
+  .grid-contenedorfechas .headerfechas .titulofechasheader {
+    margin-right: 0px;
+    margin-left: 0px; }
+  .grid-contenedorfechas .mainfechas {
+    width: 100%;
+    background-image: url(../img/Foto_de_fondo_para_fechas.jpg);
+    background-size: 100%; }
+    .grid-contenedorfechas .mainfechas .herofechas {
+      font-size: 12px; } }
+
+/*---MEDIA-QUERIES-CONTACTO---*/
+@media screen and (max-width: 980px) {
+  .grid-contenedorcontacto .headercontacto img {
+    width: 100px;
+    height: 100px; }
+  .grid-contenedorcontacto .headercontacto .titulocontactoheader {
+    font-size: 50px;
+    margin-right: 60px; }
+  .grid-contenedorcontacto .headercontacto nav #check:checked ~ ul {
+    right: 0;
+    position: absolute;
+    top: 120px; }
+  .grid-contenedorcontacto .headercontacto nav .checkbtn {
+    display: block; }
+  .grid-contenedorcontacto .headercontacto nav ul {
+    position: fixed;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0.479);
+    top: 150px;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .grid-contenedorcontacto .headercontacto nav ul li {
+      display: block;
+      margin: 10px 0;
+      line-height: 30px; }
+      .grid-contenedorcontacto .headercontacto nav ul li a {
+        font-size: 20px; }
+        .grid-contenedorcontacto .headercontacto nav ul li a:hover,
+        .grid-contenedorcontacto .headercontacto nav ul li a li a.active {
+          background: none; } }
+
+@media screen and (max-width: 780px) {
+  .grid-contenedorcontacto .headercontacto .titulocontactoheader {
+    font-size: 30px; }
+  .grid-contenedorcontacto .maincontacto {
+    background-size: contain;
+    background-position: center;
+    height: 1000px; }
+    .grid-contenedorcontacto .maincontacto .herocontacto form {
+      font-size: 20px; }
+      .grid-contenedorcontacto .maincontacto .herocontacto form div input {
+        height: 20px; }
+      .grid-contenedorcontacto .maincontacto .herocontacto form .enviar input {
+        font-size: 15px;
+        height: 20px; }
+  .grid-contenedorcontacto .footercontacto .redessociales img {
+    width: 50px;
+    height: 50px; } }
+
+@media screen and (max-width: 520px) {
+  .herocontacto form {
+    font-size: 20px; }
+  .herocontacto form div input {
+    height: 20px; }
+  .headercontacto nav ul li {
+    margin-left: -30px; }
+  .dejatumsj textarea {
+    width: 200px;
+    height: 130px; } }
+
+/*---MEDIA-QUERIES-NOTICIAS---*/
+@media screen and (max-width: 1150px) {
+  .grid-contenedornoticias {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 2000px 200px;
+    gap: 0px 0px;
+    grid-template-areas: "header" "main" "footer"; }
+  .mainnoticias {
+    background-image: url(../img/foto_banda_para_noticias.jpg);
+    background-size: contain;
+    height: 2000px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; }
+  .mainnoticias div img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10%; }
+  .mainnoticias div a {
+    margin-top: 30px;
+    text-anchor: start; } }
+
+@media screen and (max-width: 980px) {
+  .grid-contenedornoticias .headernoticias img {
+    width: 100px;
+    height: 100px; }
+  .grid-contenedornoticias .headernoticias .titulocontactonoticias {
+    font-size: 50px;
+    margin-right: 60px; }
+  .grid-contenedornoticias .headernoticias nav #check:checked ~ ul {
+    right: 0;
+    position: absolute;
+    top: 120px; }
+  .grid-contenedornoticias .headernoticias nav .checkbtn {
+    display: block; }
+  .grid-contenedornoticias .headernoticias nav ul {
+    position: fixed;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0.479);
+    top: 150px;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .grid-contenedornoticias .headernoticias nav ul li {
+      display: block;
+      margin: 10px 0;
+      line-height: 30px; }
+      .grid-contenedornoticias .headernoticias nav ul li a {
+        font-size: 20px; }
+        .grid-contenedornoticias .headernoticias nav ul li a:hover,
+        .grid-contenedornoticias .headernoticias nav ul li a li a.active {
+          background: none; }
+  .grid-contenedornoticias .mainnoticias div a {
+    font-size: 13px;
+    margin-top: 30px;
+    text-align: center; }
+  .grid-contenedornoticias .mainnoticias div p {
+    font-size: small; } }
+
+@media screen and (max-width: 780px) {
+  .grid-contenedornoticias .footernoticias .redessociales img {
+    width: 50px;
+    height: 50px; } }

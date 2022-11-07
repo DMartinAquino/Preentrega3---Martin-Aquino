@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/*--GRILLA-INDEX*/
 .grid-contenedor {
     width: 100%;
     display: grid;
@@ -19,6 +20,7 @@
         "footer footer footer";
 }
 
+/*--GRILLA-BANDA*/
 .grid-contenedorbanda {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -30,6 +32,7 @@
         "footer footer"
 }
 
+/*--GRILLA-DISCOGRAFIA*/
 .grid-contenedordisco {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -41,6 +44,7 @@
         "footer footer footer"
 }
 
+/*--GRILLA-FECHAS*/
 .grid-contenedorfechas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -52,6 +56,7 @@
         "footer footer footer"
 }
 
+/*--GRILLA-CONTACTO*/
 .grid-contenedorcontacto {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -63,6 +68,8 @@
         "footer footer footer"
 }
 
+
+/*--GRILLA-NOTICIAS*/
 .grid-contenedornoticias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
